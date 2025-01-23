@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 // Import images
 import bannerImage from "../assets/banner.png";
-import people1Image from "../assets/people1.png";
-import people2Image from "../assets/people2.png";
-import people3Image from "../assets/people3.png";
-import people4Image from "../assets/people4.png";
+import people1Image from "../assets/People1.png";
+import people2Image from "../assets/People2.png";
+import people3Image from "../assets/People3.png";
+import people4Image from "../assets/People4.png";
 
 function Pakar() {
   const { pakarId } = useParams(); // Get parameter from URL
