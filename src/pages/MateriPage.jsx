@@ -127,7 +127,7 @@ const MateriPage = () => {
                     image={
                       materi.main_image_url.startsWith('http')
                         ? materi.main_image_url
-                        : `http://localhost:5000${materi.main_image_url}`
+                        : `${import.meta.env.VITE_APP_URL+materi.main_image_url}`
                     }
                     title={
                       materi.title.length > 50

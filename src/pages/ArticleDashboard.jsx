@@ -13,7 +13,7 @@ const ArticleDashboard = () => {
   useEffect(() => {
     const fetchArticles = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/articles`); // Ambil data dari backend
+            const response = await fetch(import.meta.env.VITE_APP_URL+`/api/articles`); // Ambil data dari backend
             if (!response.ok) {
                 throw new Error("Gagal memuat data artikel");
             }

@@ -22,7 +22,7 @@ const DashboardBerita = () => {
   useEffect(() => {
     const fetchBerita = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/berita");
+        const response = await fetch(import.meta.env.VITE_APP_URL+"/api/berita");
         if (!response.ok) {
           throw new Error("Gagal memuat data berita");
         }

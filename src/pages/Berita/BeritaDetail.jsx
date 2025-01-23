@@ -18,7 +18,7 @@ const BeritaDetail = () => {
 useEffect(() => {
   const fetchBerita = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/berita/${id}`);
+      const response = await fetch(import.meta.env.VITE_APP_URL+`/api/berita/${id}`);
       if (!response.ok) {
         throw new Error("Gagal memuat data berita");
       }

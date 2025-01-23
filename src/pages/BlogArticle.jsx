@@ -24,7 +24,7 @@ const BlogArticle = () => {
   useEffect(() => {
     const fetchArticle = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/articles/${id}`); // Ambil data artikel spesifik
+        const response = await fetch(import.meta.env.VITE_APP_URL+`/api/articles/${id}`); // Ambil data artikel spesifik
         if (!response.ok) {
           throw new Error("Gagal memuat data artikel");
         }
@@ -48,7 +48,7 @@ const BlogArticle = () => {
     useEffect(() => {
       const fetchAllArticles = async () => {
         try {
-          const response = await fetch("http://localhost:5000/api/articles");
+          const response = await fetch(import.meta.env.VITE_APP_URL+"/api/articles");
           if (!response.ok) {
             throw new Error("Gagal memuat semua artikel");
           }
@@ -83,7 +83,7 @@ const BlogArticle = () => {
   
     try {
       // Kirim komentar ke backend
-      const response = await fetch(`http://localhost:5000/api/articles/${id}/comments`, {
+      const response = await fetch(import.meta.env.VITE_APP_URL+`/api/articles/${id}/comments`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(commentPayload),
