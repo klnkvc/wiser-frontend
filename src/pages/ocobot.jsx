@@ -16,7 +16,7 @@ function MessageList({ messages }) {
         >
           {msg.sender === "bot" && (
             <img
-              src="src/assets/iconai.png"
+              src="/assets/iconai.png"
               alt="Bot Icon"
               className="w-8 h-8 mr-3"
             />
@@ -32,7 +32,7 @@ function MessageList({ messages }) {
           </div>
           {msg.sender === "user" && (
             <img
-              src="src/assets/user.png"
+              src="/assets/user.png"
               alt="User Icon"
               className="w-8 h-8 ml-3"
             />
@@ -65,7 +65,7 @@ function QuestionTemplates({
               className="text-gray-700 p-2 rounded-full"
             >
               <img
-                src="src/assets/refresh.png"
+                src="/assets/refresh.png"
                 alt="Restart Icon"
                 className="w-6 h-6"
               />
@@ -95,7 +95,7 @@ function ChatInput({ input, setInput, handleSend }) {
         type="submit"
         className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"
       >
-        <img src="src/assets/send.png" alt="Send Icon" className="w-6 h-6" />
+        <img src="/assets/send.png" alt="Send Icon" className="w-6 h-6" />
       </button>
     </form>
   );
@@ -214,7 +214,7 @@ function Ocobot() {
         <aside className="w-1/4 p-5 flex flex-col items-center h-full">
           <div
             className="w-full h-full bg-cover bg-no-repeat flex flex-col items-center p-5 mr-9 mt-14"
-            style={{ backgroundImage: "url('src/assets/chatbotbanner.png')" }}
+            style={{ backgroundImage: "url('/assets/chatbotbanner.png')" }}
           >
             <button>
               <Link

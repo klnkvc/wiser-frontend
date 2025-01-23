@@ -35,7 +35,7 @@ function Konsultasi() {
       <aside className="w-1/4 p-5 flex flex-col items-center min-h-screen">
         <div
           className="w-full h-full bg-cover bg-no-repeat flex flex-col items-center p-5 mr-9 mt-14"
-          style={{ backgroundImage: "url('src/assets/banner.png')" }}
+          style={{ backgroundImage: "url('/assets/banner.png')" }}
         >
           <button className="w-full bg-white font-raleway font-bold text-xl py-5 px-4 mb-4 mt-48 ml-12 rounded-md">
             Konsultasi dengan Pakar
@@ -109,7 +109,7 @@ function Konsultasi() {
               className="flex flex-col items-center w-60 mx-auto ml-36"
             >
               <img
-                src="src/assets/people1.png"
+                src="/assets/People1.png"
                 alt="Pak Fadli Sileuer"
                 className="w-full h-80 object-cover"
               />
@@ -125,7 +125,7 @@ function Konsultasi() {
               className="flex flex-col items-center w-60 mx-auto -ml-96"
             >
               <img
-                src="src/assets/people2.png"
+                src="/assets/People2.png"
                 alt="Pak Muh. Rayhan"
                 className="w-full h-80 object-cover"
               />
@@ -141,7 +141,7 @@ function Konsultasi() {
               className="flex flex-col items-center w-60  mx-auto  ml-36"
             >
               <img
-                src="src/assets/people3.png"
+                src="/assets/People3.png"
                 alt="Pak Rizky Andika"
                 className="w-full h-80 object-cover"
               />
@@ -157,7 +157,7 @@ function Konsultasi() {
               className="flex flex-col items-center w-60  mx-auto -ml-96"
             >
               <img
-                src="src/assets/people4.png"
+                src="/assets/People4.png"
                 alt="Pak Ahmad Hidayat"
                 className="w-full h-80 object-cover"
               />
